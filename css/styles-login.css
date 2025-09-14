@@ -1,0 +1,110 @@
+.ps-6 {padding-left: 250px !important;}
+.ps-7 {padding-left: 72px !important;}
+.ps-8 {padding-left: 84px !important;}
+.ps-9 {padding-left: 96px !important;}
+
+body {
+     margin: 0;
+    height: 100vh;
+    background-image: url(../images/login.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* divRegistro */
+#divRegistro {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#divRegistro h1 {
+    margin-bottom: 20px;
+}
+
+#divRegistro a {
+    background-color: #000000;
+    color: #fff;
+    padding: 8px 30px 10px 30px;
+    font-size: 22px;   
+    border-radius: 14px;
+    text-decoration: none;
+}
+
+#divBotaoRegistro {
+     margin-top: 30px;
+}
+
+
+/* divLogin */
+#divLogin {
+    margin-top: 200px;
+    text-align: center;
+}
+
+#divLogin h1 {
+    margin-bottom: 20px;
+}
+
+#divLogin a {
+    background-color: #000000;
+    color: #fff;
+    padding: 8px 30px 10px 30px;
+    font-size: 22px;   
+    border-radius: 14px;
+    text-decoration: none;
+}
+
+#divBotaoLogin {
+     margin-top: 30px;
+}
+
+.form-control {
+    border-radius: 20px !important;
+}
+
+/* divFazerRegistro */
+#divFazerRegistro {
+    margin-top: 300px;
+    text-align: center;
+}
+
+#divFazerRegistro h1 {
+    margin-bottom: 20px;
+}
+
+#divFazerRegistro a {
+    background-color: #000000;
+    color: #fff;
+    padding: 8px 30px 10px 30px;
+    font-size: 22px;   
+    border-radius: 14px;
+    text-decoration: none;
+}
+
+#divBotaoFazerRegistro {
+     margin-top: 30px;
+}
+
+/* divFazerLogin */
+#divFazerLogin {
+    margin-top: 300px;
+    text-align: center;
+}
+
+#divFazerLogin h1 {
+    margin-bottom: 20px;
+}
+
+#divFazerLogin a {
+    background-color: #000000;
+    color: #fff;
+    padding: 8px 30px 10px 30px;
+    font-size: 22px;   
+    border-radius: 14px;
+    text-decoration: none;
+}
+
+#divBotaoFazerLogin {
+     margin-top: 30px;
+}

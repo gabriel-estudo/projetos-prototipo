@@ -1,0 +1,97 @@
+.font-size-10 { font-size: 10px !important;}
+.font-size-20 { font-size: 20px !important;}
+.font-size-25 { font-size: 25px !important;}
+.font-size-30 { font-size: 30px !important;}
+.font-size-35 { font-size: 35px !important;}
+.font-size-40 { font-size: 40px !important;}
+
+.ps-6 {padding-left: 250px !important;}
+.ps-7 {padding-left: 72px !important;}
+.ps-8 {padding-left: 84px !important;}
+.ps-9 {padding-left: 96px !important;}
+
+.container-titulo {
+    text-align: center;
+}
+
+.titulo {
+    padding-top: 98px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.subtitulo {
+    text-align: center;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.container-botao-registro {
+    padding-top: 24px;
+    text-align: center;
+}
+
+.botao-registro {
+    background-color: #000000;
+    color: #fff;
+    padding: 8px 30px 10px 30px;
+    font-size: 22px;   
+    border-radius: 14px;
+    text-decoration: none;
+}
+
+#divBotaoFazerLoginInicial a {
+    background-color: #000000;
+    color: #fff;
+    padding: 8px 30px 10px 30px;
+    font-size: 16px;   
+    border-radius: 14px;
+    text-decoration: none;
+}
+
+/* CSS IMAGENS */
+.im-marquee {
+    height: 100vh;
+    display: flex;
+    gap: 28px;
+    padding: 24px;
+    overflow: hidden;
+}
+
+/* Cada coluna é uma pilha vertical */
+.im-col {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    will-change: transform;
+    transform: translateZ(0);
+    animation-name: scrollY;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: var(--duration, 12s);
+}
+
+/* Largura/estilo das imagens */
+.im-col img {
+    /* width: clamp(180px, 22vw, 260px); */
+    width: 200px;
+    height: 300px;
+    /* aspect-ratio: 4/5; */
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    /* user-select: none; */
+    /* -webkit-user-drag: none; */
+}
+
+/* A animação usa a variável com a distância exata a percorrer */
+@keyframes scrollY {
+    to { transform: translateY(calc(-1 * var(--scroll-distance))); }
+}
+
+/* Acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    .col { animation: none; }
+}

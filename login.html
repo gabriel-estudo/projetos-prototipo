@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles-login.css" />
+    <script src="js/scripts-login.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Vinylist login</title>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary backdrop">
+  
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+  </div>
+</nav>  
+
+    <div class="row">
+
+      <div class="col-6">
+        
+        <div class="" id="divRegistro">
+          <h1>Registre-se no Vinylist</h1>
+          <div class="form-floating mb-3 col-6 mx-auto">
+            <input
+              type="text"
+              class="form-control"
+              id="rNome"
+              placeholder="name@example.com"
+            />
+            <label for="rNome">Digite seu nome:</label>
+          </div>
+
+          <div class="form-floating mb-3 col-6 mx-auto">
+            <input
+              type="email"
+              class="form-control"
+              id="rEmail"
+              placeholder="name@example.com"
+            />
+            <label for="rEmail">Digite seu email:</label>
+          </div>
+
+          <div class="form-floating mb-3 col-6 mx-auto">
+            <input
+              type="password"
+              class="form-control"
+              id="rSenha"
+              placeholder="Password"
+            />
+            <label for="rSenha">Digite sua senha:</label>
+          </div>
+
+          <div class="form-floating mb-3 col-6 mx-auto">
+            <input
+              type="password"
+              class="form-control"
+              id="rConfirmaSenha"
+              placeholder="Password"
+            />
+            <label for="rConfirmaSenha">Confirme sua senha:</label>
+          </div>
+
+          <div id="divBotaoRegistro">
+            <a href="index.html" class="botao-registro">Confirmar</a>
+          </div>
+        </div>
+      
+
+      <div class="" id="divLogin">
+        <form id="formLogin">
+        <h1>Faça login</h1>
+        <div class="form-floating mb-3 col-6 mx-auto">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="name@example.com"
+          />
+          <label for="email">Digite seu email:</label>
+        </div>
+
+        <div class="form-floating mb-3 col-6 mx-auto">
+          <input
+            type="password"
+            class="form-control"
+            id="senha"
+            placeholder="Password"
+          />
+          <label for="senha">Digite sua senha:</label>
+        </div>
+        <div id="divBotaoLogin">
+            <a href="#" onclick="executarLogin()">Confirmar</a>
+          </div>
+          </form>          
+      </div>
+    </div>
+
+      <div class="col-6">
+      
+      <div id="divFazerLogin">
+        <h1>Já possui conta?</h1>
+
+        <div id="divBotaoFazerLogin">
+            <a href="#" onclick="montaDisplay(2)">Fazer login</a>
+          </div>
+      </div>
+
+        <div id="divFazerRegistro">
+          <h1>Não possui conta?</h1>
+  
+          <div id="divBotaoFazerRegistro">
+            <a href="#" onclick="montaDisplay(1)">Fazer registro</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

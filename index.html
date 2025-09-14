@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinylist</title>
+
+<!--CSS-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/styles.css" />
+
+<!--JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary backdrop">
+  
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="fa fa-home"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="d-flex ps-5" role="search">
+        <input class="form-control me-2 rounded-4" type="search" placeholder="Search" aria-label="Search"/>
+      </form>
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link font-size-20" aria-current="page" href="#">Músicas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-size-20" href="#">Álbuns</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-size-20" href="#">Listas</a>
+        </li>
+      </ul>
+      
+      <div id="divUsuarioLogado">
+        <div class="dropdown dropstart">
+          <a class="navbar-brand dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#"><i class="fa fa-user"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Perfil</a></li>
+            <li><a class="dropdown-item" href="#" onclick="deslogarUsuario()">Deslogar</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="divBotaoFazerLoginInicial">
+            <a href="login.html?acao=fazerLogin">Fazer login</a>
+      </div>
+    </div>
+  </div>
+</nav>  
+
+<div class="row">
+  <div class="col-7">
+    <div class="container-titulo">
+      <div class="titulo">Avalie seus<br>albuns preferidos</div>
+      <h4 class="subtitulo">Use o Vinylist para avaliar<br> suas músicas
+        e registrar sua coleção de vinis
+      </h4>
+      <div class="container-botao-registro">
+        <a href="login.html?acao=fazerRegistro" class="botao-registro">Registre-se</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-5">
+    <div class="im-marquee">
+      <!-- Mais rápida (defina a duração em segundos) -->
+      <div class="im-col" data-duration="0.8" style="width: 45%;">
+        <img src="images/24k magic.jpg" alt="">
+        <img src="images/808s.jpeg" alt="">
+        <img src="images/ds2.jpg" alt="">
+        <img src="images/Uma outra estação.jpeg" alt="">
+        <img src="images/The Divine Feminine_.jpeg" alt="">
+      </div>
+
+      <!-- Mais lenta -->
+      <div class="im-col" data-duration="0.6" style="width: 55%;">
+        <img  src="images/24k magic.jpg" alt="">
+        <img src="images/808s.jpeg" alt="">
+        <img src="images/ds2.jpg" alt="">
+        <img src="images/Uma outra estação.jpeg" alt="">
+        <img src="images/The Divine Feminine_.jpeg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
